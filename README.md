@@ -19,3 +19,11 @@ IDEA 5:
 Goal: Converting MySQL query to MongoDB query
 Abstract:
 We have checked various online tools which convert a MySQL query to a MongoDB query. However, most of these programs are limited to only MySQL select statements. The goal here is to design a website which will include comprehensive translation from MySQL to MongoDB.
+
+IDEA 6:
+
+We are continuously in the need of a household helper who could design our everyday menu for us after acquiring knowledge gained over a period of time. Something which should keep our nutritional needs in mind and tell us what needs to be cooked today and also remind us to keep a check on our groceries and if we need to buy them whenever needed. The problem lies in the fact that we need to think daily what to make and the process tends to get monotonous after a while and we never cook more than 2 or 3 things. This is what needs to be solved!
+
+IDEA 7:
+
+At work each one has an annual work plan. People are expected to work to achieve each of these objectives.And it is very easy to lose track of your tasks or your objectives.So there should be something which should help you figure out your daily plan, keeping in mind your work load and be able to tweak the tasks accordingly. For example, if you have overworked in the first half it should suggest you to do something lighter for the rest of the day. We could maybe figure out when a person is over stressed and over worked and tell them to take a break. This seems to be very essential when it comes to productivity which is directly proportional to a person’s state of mind.
