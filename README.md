@@ -12,7 +12,8 @@ Presentations are an important part of all types of knowledge sharing events, wh
 We intend to design a solution for this problem which can compute the font size depending upon the size of the room. It should display a sample letter on the screen so that host can set similar font size of the presentation text.
 
 
-IDEA 2:
+IDEA 2:  - APPROVED comments: consider representing data as graph where incoming node represents traffic into a point which will allow you to analyze which companies are wasting productivity etc..talk to me if you need more info
+
 There is a problem that every metropolitan city faces, traffic jams during rush hours 8am-11am in morning and 5pm onwards in evening. A lot of time of brilliant mind is wasted which they could have used productively. We intend to analyse the data from traffic sensors and give companies schedules which they can opt as work timings to minimise this waste of time. A common platform on which all companies can register to get an optimised office timing schedule for their employees.
 
 
