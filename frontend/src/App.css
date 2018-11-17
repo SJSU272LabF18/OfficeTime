@@ -35,12 +35,11 @@
 }
 
 .homeNext {
-  margin-top: 40vw;
-  margin-left: 45vw;
+  margin-top: 2vw;
+  margin-left: 38vw;
   font-size: 1.5vw;
   background-color: white;
-  border-radius: 50%;
-  width: 6%;
+  width: auto;
   height: 5%;
 }
 
@@ -93,4 +92,140 @@
 .login_body span {
   color: white;
   font-size: 2vw;
+}
+
+.homeBody h1 {
+  color: white;
+  margin-top: 5vw;
+  margin-left: 40vw;
+  font-size: 2vw;
+}
+
+.homeBody h3 {
+  color: white;
+  margin-left: 35vw;
+  font-size: 1vw;
+}
+
+.homeBody h4 {
+  color: white;
+  margin-left: 39vw;
+  font-size: 1vw;
+}
+
+.pieChart {
+  /* border: 1px solid white; */
+  margin-left: 10vw;
+  width: 25vw;
+  height: 30vw;
+}
+
+.homeBody2 {
+  border: 1px solid black;
+  color: white;
+  margin-left: 40vw;
+  margin-top: -20vw;
+  width: 20vw;
+  font-size: 2vw;
+  padding: 1vw 1vw 1vw 1vw;
+}
+
+.lineChart {
+  /* border: 1px solid white; */
+  margin-left: 67vw;
+  margin-top: -21vw;
+  width: 25vw;
+  height: 30vw;
+}
+
+.homeBody3 {
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-left: 30vw;
+}
+
+.problem1Body {
+  color: white;
+  font-size: 2vw;
+  margin-top: 3vw;
+  margin-left: 35vw;
+}
+
+.sourceDestination {
+  margin-left: 25vw;
+  margin-top: 1vw;
+}
+
+.sourceDestination tr {
+  padding-bottom: 4vw;
+}
+
+.source {
+  font-size: 2vw;
+}
+
+.destination {
+  font-size: 2vw;
+}
+
+.problem2Body {
+  color: white;
+  width: 30vw;
+  margin-left: 10vw;
+  margin-top: 10vw;
+}
+
+.barChart {
+  border: 1px solid white;
+  width: 35vw;
+  float: right;
+  margin-right: 20vw;
+  margin-top: -7vw;
+  height: 30vw;
+}
+
+.company_form {
+  margin-left: 40vw;
+  margin-top: 5vw;
+  width: 20vw;
+}
+
+.company_form .form_field {
+  width: 15vw;
+  height: 2vw;
+  font-size: 1vw;
+}
+
+.company_form input {
+  margin-bottom: 1vw;
+}
+
+.company_form button {
+  margin-left: 5vw;
+  margin-top: 2vw;
+  width: 5vw;
+  height: 2vw;
+  font-size: 1vw;
+}
+
+.lineChart1 {
+  border: 1px solid white;
+  margin-left: 50vw;
+  margin-top: -15vw;
+  width: 25vw;
+  height: 30vw;
+}
+
+.about {
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+
+.about1 {
+  color: white;
+  font-size: 1vw;
+  margin-left: 30vw;
+  margin-top: 5vw;
+  font-weight: bold;
 }

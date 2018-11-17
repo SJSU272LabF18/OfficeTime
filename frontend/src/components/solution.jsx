@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Link } from "react-router-dom";
 
-class Home extends Component {
+class Solution extends Component {
   state = {};
   render() {
     return (
@@ -17,8 +17,7 @@ class Home extends Component {
         </div>
         <div className="pieChart">PieChart</div>
         <div className="homeBody2">
-          Time Companies are wasting due to traffic congestions during traffic
-          hours
+          Time Companies are saving using our recommendations
         </div>
         <div className="lineChart">LineChart</div>
         <div className="homeBody3">
@@ -28,10 +27,10 @@ class Home extends Component {
           <Link
             className="homeNext_text"
             to={{
-              pathname: "/solution"
+              pathname: "/problem1"
             }}
           >
-            Click to know our solution to the problem
+            Click to know examples of our solution
           </Link>
         </button>
       </div>
@@ -39,4 +38,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Solution;

@@ -7,14 +7,18 @@ class ProblemStatement2 extends Component {
     return (
       <div className="home">
         <Navbar />
-        <button className="problem2_signup">
+        <div className="problem2Body">
+          <h1>This graph will show the commute time at different day hours.</h1>
+        </div>
+        <div className="barChart">Bar Chart</div>
+        <button className="homeNext">
           <Link
             className="homeNext_text"
             to={{
               pathname: "/login"
             }}
           >
-            Sign-up
+            Proceed for Login
           </Link>
         </button>
       </div>
