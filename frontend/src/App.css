@@ -1,0 +1,96 @@
+.notfound {
+  margin: 150px auto;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbar-home {
+  color: white;
+  font-size: 2.5vw;
+  text-decoration: none;
+  margin-left: 1vw;
+}
+
+.home {
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login {
+  margin-left: 65vw;
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+
+.about {
+  margin-left: 2vw;
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+
+.homeNext {
+  margin-top: 40vw;
+  margin-left: 45vw;
+  font-size: 1.5vw;
+  background-color: white;
+  border-radius: 50%;
+  width: 6%;
+  height: 5%;
+}
+
+.homeNext_text {
+  text-decoration: none;
+  color: black;
+}
+
+.problem2_signup {
+  margin-top: 40vw;
+  margin-left: 45vw;
+  font-size: 1.5vw;
+  background-color: white;
+  border-radius: 50%;
+  width: 10%;
+  height: 6%;
+}
+
+.login_img {
+  margin: 5vw 0 0 10vw;
+  width: 40vw;
+  height: 40vw;
+}
+
+.login_body {
+  border: 1px solid white;
+  margin: -40vw 0 0 55vw;
+  width: 30vw;
+  height: 40vw;
+}
+
+.traffic_img {
+  width: 40vw;
+  height: 40vw;
+}
+
+.login_body h1 {
+  color: white;
+  text-align: center;
+}
+
+.social_media {
+  margin-left: 7vw;
+  margin-top: 5vw;
+  background: none;
+  width: 15vw;
+  height: 3vw;
+}
+
+.login_body span {
+  color: white;
+  font-size: 2vw;
+}
