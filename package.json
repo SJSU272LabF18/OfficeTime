@@ -1,0 +1,15 @@
+{
+  "name": "fordfulkerson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ford_fulkerson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graph-theory-ford-fulkerson": "^1.0.0",
+    "node-dijkstra": "^2.5.0"
+  }
+}
