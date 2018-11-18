@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Navbar from "./common/navbar";
-import { Link } from "react-router-dom";
 
 class Suggestions extends Component {
   render() {
@@ -14,7 +13,7 @@ class Suggestions extends Component {
             Don't let traffic kill your time. Speed up your journey.
           </h1>
         </div>
-        <div className="lineChart1">Line Chart</div>
+        <div className="lineChart1">LineChart</div>
       </div>
     );
   }

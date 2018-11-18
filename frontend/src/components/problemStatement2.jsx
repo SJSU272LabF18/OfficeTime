@@ -10,7 +10,7 @@ class ProblemStatement2 extends Component {
         <div className="problem2Body">
           <h1>This graph will show the commute time at different day hours.</h1>
         </div>
-        <div className="barChart">Bar Chart</div>
+        <div className="barChart">BarChart</div>
         <button className="homeNext">
           <Link
             className="homeNext_text"

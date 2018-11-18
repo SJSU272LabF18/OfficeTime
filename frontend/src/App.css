@@ -36,7 +36,7 @@
 
 .homeNext {
   margin-top: 2vw;
-  margin-left: 38vw;
+  margin-left: 35vw;
   font-size: 1.5vw;
   background-color: white;
   width: auto;
@@ -115,15 +115,16 @@
 
 .pieChart {
   /* border: 1px solid white; */
-  margin-left: 10vw;
+  margin-left: 5vw;
   width: 25vw;
   height: 30vw;
+  background-color: rgba(211, 211, 211, 0.795);
 }
 
 .homeBody2 {
   border: 1px solid black;
   color: white;
-  margin-left: 40vw;
+  margin-left: 35vw;
   margin-top: -20vw;
   width: 20vw;
   font-size: 2vw;
@@ -132,10 +133,11 @@
 
 .lineChart {
   /* border: 1px solid white; */
-  margin-left: 67vw;
+  margin-left: 62vw;
   margin-top: -21vw;
-  width: 25vw;
+  width: 30vw;
   height: 30vw;
+  background-color: rgba(211, 211, 211, 0.795);
 }
 
 .homeBody3 {
@@ -183,6 +185,7 @@
   margin-right: 20vw;
   margin-top: -7vw;
   height: 30vw;
+  background-color: rgba(211, 211, 211, 0.795);
 }
 
 .company_form {
@@ -210,11 +213,11 @@
 }
 
 .lineChart1 {
-  border: 1px solid white;
   margin-left: 50vw;
   margin-top: -15vw;
-  width: 25vw;
-  height: 30vw;
+  width: 35vw;
+  height: 35vw;
+  background-color: rgba(211, 211, 211, 0.795);
 }
 
 .about {

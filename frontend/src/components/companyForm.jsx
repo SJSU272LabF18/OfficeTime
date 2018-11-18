@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
-import PropTypes from "prop-types";
 
 class CompanyForm extends Component {
   renderField(field) {

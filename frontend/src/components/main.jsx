@@ -11,6 +11,7 @@ import store from "./common/store";
 import { Provider } from "react-redux";
 import Suggestions from "./suggestions";
 import About from "./about";
+import PieChartExample from "./pieChart";
 
 class Main extends Component {
   render() {
@@ -26,6 +27,7 @@ class Main extends Component {
             <Route path="/companyform" exact component={CompanyForm} />
             <Route path="/suggestions" exact component={Suggestions} />
             <Route path="/about" exact component={About} />
+            <Route path="/pie" exact component={PieChartExample} />
             <Route path="/not-found" exact component={NotFound} />
             <Route path="/" exact component={Home} />
             <Redirect to="/not-found" />
