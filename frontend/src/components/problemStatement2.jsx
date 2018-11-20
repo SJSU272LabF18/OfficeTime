@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Link } from "react-router-dom";
+import { VictoryBar, VictoryChart } from "victory";
 
 class ProblemStatement2 extends Component {
   render() {
@@ -10,7 +11,21 @@ class ProblemStatement2 extends Component {
         <div className="problem2Body">
           <h1>This graph will show the commute time at different day hours.</h1>
         </div>
-        <div className="barChart">BarChart</div>
+        <div className="barChart">
+          <VictoryChart domainPadding={40}>
+            <VictoryBar
+              style={{ data: { fill: "blue" } }}
+              data={[
+                { data1: "A", data2: 1234 },
+                { data1: "B", data2: 2048 },
+                { data1: "C", data2: 2600 },
+                { data1: "D", data2: 9000 }
+              ]}
+              x="data1"
+              y="data2"
+            />
+          </VictoryChart>
+        </div>
         <button className="homeNext">
           <Link
             className="homeNext_text"

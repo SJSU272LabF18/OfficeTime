@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Link } from "react-router-dom";
-import { VictoryPie, VictoryChart, VictoryLine } from "victory";
+import { VictoryPie } from "victory";
 
 class Solution extends Component {
   state = {};
