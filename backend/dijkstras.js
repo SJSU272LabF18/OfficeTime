@@ -1,11 +1,11 @@
-const Graph = require('node-dijkstra')
+const Graph = require('node-dijkstra') //shortest/least cost path
  
 const route = new Graph()
  
-route.addNode('A', { B:1 })
-route.addNode('B', { A:1, C:2, D: 4, E: 2 })
-route.addNode('C', { B:2, D:1 })
-route.addNode('D', { C:5, B:4 })
-route.addNode('E', { D:4, B:2 })
+route.addNode('A', { B:5, C:9 })
+route.addNode('B', { D: 4})
+route.addNode('C', { D:8, E:3, F:2 })
+route.addNode('D', { E:1, F:3 })
+route.addNode('E', { F:9})
  
-console.log(route.path('A', 'E',{ cost: true })) // => [ 'A', 'B', 'C', 'D' ]
+console.log(route.path('A', 'F',{ cost: true })) // => [ 'A', 'B', 'C', 'D' ]
