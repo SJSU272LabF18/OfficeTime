@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Link } from "react-router-dom";
-import { VictoryPie } from "victory";
+import { VictoryPie, VictoryChart, VictoryLine } from "victory";
 
 class Home extends Component {
   state = {};
@@ -32,7 +32,20 @@ class Home extends Component {
           Time Companies are wasting due to traffic congestions during traffic
           hours
         </div>
-        <div className="lineChart"> LineChart</div>
+        <div className="lineChart">
+          {" "}
+          <VictoryChart>
+            <VictoryLine
+              style={{ data: { fill: "blue" } }}
+              data={[
+                { x: "A", y: 1234 },
+                { x: "B", y: 2048 },
+                { x: "C", y: 2600 },
+                { x: "D", y: 9000 }
+              ]}
+            />
+          </VictoryChart>
+        </div>
         <br />
         <div className="homeBody3">
           Graphical representation of Data Analysis
