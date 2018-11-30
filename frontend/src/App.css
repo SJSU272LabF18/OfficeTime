@@ -155,8 +155,8 @@
 }
 
 .sourceDestination {
-  margin-left: 25vw;
   margin-top: 1vw;
+  float: left;
 }
 
 .sourceDestination tr {
@@ -231,4 +231,20 @@
   margin-left: 30vw;
   margin-top: 5vw;
   font-weight: bold;
+}
+
+.google_map {
+  border: 1px solid white;
+  float: right;
+  width: 45vw;
+  margin-right: 5vw;
+  margin-top: 3vw;
+  height: 35vw;
+}
+
+.google,
+.google:hover {
+  margin-left: 5vw;
+  margin-top: 4vw;
+  color: black;
 }

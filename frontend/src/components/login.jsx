@@ -1,24 +1,21 @@
 import React, { Component } from "react";
 import Navbar from "./common/navbar";
-import { GoogleLogin } from 'react-google-login';
-import axios from 'axios';
-import {Redirect} from 'react-router';
-import '../components/Login.css';
+import { GoogleLogin } from "react-google-login";
+import axios from "axios";
 
 class Login extends Component {
-
   constructor(props) {
     super(props);
-       this.state = {
-       authFlag: false,
-       error : false
-};
-this.signup = this.signup.bind(this);
-}
+    this.state = {
+      authFlag: false,
+      error: false
+    };
+    this.signup = this.signup.bind(this);
+  }
 
-signup(res, type) {
-     let postData;
-     if (type === 'google' && res.w3.U3) {
+  signup(res, type) {
+    let postData;
+    if (type === "google" && res.w3.U3) {
       postData = {
         name: res.w3.ig,
         provider: type,
@@ -27,31 +24,33 @@ signup(res, type) {
         token: res.Zi.access_token,
         provider_pic: res.w3.Paa
       };
-  }
-  console.log(postData);
-  
-  axios.defaults.withCredentials = true;
-  axios.post('http://localhost:3001/login',postData).then(response => {
-    console.log("Status Code : ",response.status);
-    if(response.status === 200){
-      this.setState({
-        authFlag : true
-      })
-    }else{
-      this.setState({
-        authFlag : false
-      })
     }
-  }).catch(err => {
-    this.setState({error : true});
-    console.log(err);
-  });
+    console.log(postData);
 
-}
+    axios.defaults.withCredentials = true;
+    axios
+      .post("http://localhost:3001/login", postData)
+      .then(response => {
+        console.log("Status Code : ", response.status);
+        if (response.status === 200) {
+          this.setState({
+            authFlag: true
+          });
+        } else {
+          this.setState({
+            authFlag: false
+          });
+        }
+      })
+      .catch(err => {
+        this.setState({ error: true });
+        console.log(err);
+      });
+  }
   render() {
-    const responseGoogle = (response) => {
-      this.signup(response, 'google')
-    }    
+    const responseGoogle = response => {
+      this.signup(response, "google");
+    };
     return (
       <div className="home">
         <Navbar />
@@ -65,14 +64,14 @@ signup(res, type) {
         <div className="login_body">
           <h1>Login</h1>
           <br />
-          <div className = "google">
-          <GoogleLogin
-            clientId="405511051479-khfrjurgb9v41p0g77ic97q6qttomvub.apps.googleusercontent.com"
-            buttonText="Sign in with Google"
-            theme = "dark"
-            onSuccess={responseGoogle}
-            onFailure={responseGoogle}
-          />
+          <div className="google">
+            <GoogleLogin
+              clientId="405511051479-khfrjurgb9v41p0g77ic97q6qttomvub.apps.googleusercontent.com"
+              buttonText="Sign in with Google"
+              theme="dark"
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+            />
           </div>
         </div>
       </div>

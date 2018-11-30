@@ -42,6 +42,7 @@ class ProblemStatement1 extends Component {
             </td>
           </tr>
         </table>
+        <div className="google_map">google map</div>
         <button className="homeNext">
           <Link
             className="homeNext_text"
