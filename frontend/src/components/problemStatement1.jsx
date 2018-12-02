@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Link } from "react-router-dom";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import './problemStatement1.css';
 
 class ProblemStatement1 extends Component {
   render() {
@@ -13,40 +14,45 @@ class ProblemStatement1 extends Component {
       <div className="home">
         <Navbar />
         <div className="problem1Body">Select a Source and Destination</div>
+        <div className="two-components col-md-12">
+        <div className="subcomponent col-md-6">
         <table className="sourceDestination" cellspacing="100">
           <tr>
             <td>
-              <button className="source">Martha 5th St</button>
+              <button className="source martha">Martha 5th St</button>
             </td>
             <td>
-              <button className="destination">Facebook Office</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button className="source">San Fernando 11th St</button>
-            </td>
-            <td>
-              <button className="destination">IBM Office</button>
+              <button className="destination facebook">Facebook Office</button>
             </td>
           </tr>
           <tr>
             <td>
-              <button className="source">Santa Clara 7th St</button>
+              <button className="source san">San Fernando 11th St</button>
             </td>
             <td>
-              <button className="destination">Google Office</button>
+              <button className="destination ibm">IBM Office</button>
             </td>
           </tr>
           <tr>
             <td>
-              <button className="source">33rd S 3rd St</button>
+              <button className="source santa">Santa Clara 7th St</button>
             </td>
             <td>
-              <button className="destination">Chase Bank</button>
+              <button className="destination google">Google Office</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button className="source s33rd">33rd S 3rd St</button>
+            </td>
+            <td>
+              <button className="destination chase">Chase Bank</button>
             </td>
           </tr>
         </table>
+        </div>
+        <div className='emplty col-md-2'></div>
+        <div className="sub-component col-md-4">
         <div className="google_map">
           <Map google={this.props.google} style={style} zoom={14}>
             <Marker name={"Current location"} />
@@ -57,6 +63,8 @@ class ProblemStatement1 extends Component {
               </div> */}
             </InfoWindow>
           </Map>
+        </div>
+        </div>
         </div>
         <button className="homeNext">
           <Link
@@ -74,5 +82,5 @@ class ProblemStatement1 extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ""
+  apiKey: "AIzaSyCA81-0kQKRBGJ8ueJ7Z2_cHx2VDAwPROw"
 })(ProblemStatement1);

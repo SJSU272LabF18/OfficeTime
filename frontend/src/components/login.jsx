@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { GoogleLogin } from "react-google-login";
 import axios from "axios";
+import './Login.css';
 
 class Login extends Component {
   constructor(props) {

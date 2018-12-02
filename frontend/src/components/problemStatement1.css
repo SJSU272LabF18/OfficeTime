@@ -1,0 +1,156 @@
+.martha{
+    margin: 30px 10px 10px 10px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    transition: transform .2s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+.martha:hover{
+    background-color: blueviolet;
+    font-size: 22px;
+    border-color: blueviolet;
+    color: beige;
+    transform: scale(1.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.san{
+    margin: 50px 10px 10px 10px;
+    border-radius: 8px;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform .2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.san:hover{
+    font-size: 22px;
+    background-color: rgba(226, 43, 43, 0.849);
+    border-color: rgba(226, 43, 43, 0.849);
+    color: beige;
+    transform: scale(1.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.s33rd{
+    font-size: 22px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 58px;
+    padding-right: 58px;
+    transition: transform .2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.s33rd:hover{
+    font-size: 22px;
+    background-color: rgba(226, 168, 43, 0.89);
+    border-color: rgba(226, 168, 43, 0.89);
+    color: beige;
+    transform: scale(1.15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.santa{
+    font-size: 22px;
+    margin: 10px 0px 10px 10px;
+    border-radius: 8px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    padding-left: 33px;
+    padding-right: 33px;
+    transition: transform .2s;
+}
+.santa:hover{
+    font-size: 22px;
+    background-color: rgba(198, 226, 43, 0.925);
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: rgba(198, 226, 43, 0.925);
+    color: beige;
+    transform: scale(1.15);
+}
+.facebook{
+    font-size: 22px;
+    margin: 30px 0px 10px 50px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 33px;
+    padding-right: 33px;
+    transition: transform .2s;
+}
+.facebook:hover{
+    font-size: 22px;
+    background-color: rgba(64, 226, 43, 0.89);
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: rgba(64, 226, 43, 0.89)t;
+    color: beige;
+    transform: scale(1.12);
+}
+.google{
+    font-size: 22px;
+    margin: 10px 0px 57px 0px;  
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 43px;
+    padding-right: 43px;
+    transition: transform .2s;
+}
+.google:hover{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(46, 133, 214, 0.918);
+    border-color: rgba(46, 133, 214, 0.918);
+    color:  rgb(252, 249, 249);
+    transform: scale(1.2)
+}
+.ibm{
+    font-size: 22px;
+    margin: 50px 10px 10px 50px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    transition: transform .2s;
+}
+.ibm:hover{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: beige;
+    transform: scale(1.15);
+}
+.chase{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 10px 10px 50px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 51px;
+    padding-right: 51px;
+    transition: transform .2s;
+}
+.chase:hover{
+    font-size: 22px;
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: blueviolet;
+    color: beige;
+    transform: scale(1.15);
+}
+.sub-component{
+    margin-right: 0px;
+    margin-left: 0px;
+}
