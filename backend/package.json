@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "graph-theory-ford-fulkerson": "^1.0.0",
     "js-graph-algorithms": "^1.0.18",
     "node-dijkstra": "^2.5.0"
   }
