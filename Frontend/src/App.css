@@ -1,0 +1,250 @@
+.notfound {
+  margin: 150px auto;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbar-home {
+  color: white;
+  font-size: 2.5vw;
+  text-decoration: none;
+  margin-left: 1vw;
+}
+
+.home {
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login {
+  margin-left: 65vw;
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+
+.about {
+  margin-left: 2vw;
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+
+.homeNext {
+  margin-top: 2vw;
+  margin-left: 35vw;
+  font-size: 1.5vw;
+  background-color: white;
+  width: auto;
+  height: 5%;
+}
+
+.homeNext_text {
+  text-decoration: none;
+  color: black;
+}
+
+.problem2_signup {
+  margin-top: 40vw;
+  margin-left: 45vw;
+  font-size: 1.5vw;
+  background-color: white;
+  border-radius: 50%;
+  width: 10%;
+  height: 6%;
+}
+
+.login_img {
+  margin: 5vw 0 0 10vw;
+  width: 40vw;
+  height: 40vw;
+}
+
+.login_body {
+  border: 1px solid white;
+  margin: -40vw 0 0 55vw;
+  width: 30vw;
+  height: 40vw;
+}
+
+.traffic_img {
+  width: 40vw;
+  height: 40vw;
+}
+
+.login_body h1 {
+  color: white;
+  text-align: center;
+}
+
+.social_media {
+  margin-left: 7vw;
+  margin-top: 5vw;
+  background: none;
+  width: 15vw;
+  height: 3vw;
+}
+
+.login_body span {
+  color: white;
+  font-size: 2vw;
+}
+
+.homeBody h1 {
+  color: white;
+  margin-top: 5vw;
+  margin-left: 40vw;
+  font-size: 2vw;
+}
+
+.homeBody h3 {
+  color: white;
+  margin-left: 35vw;
+  font-size: 1vw;
+}
+
+.homeBody h4 {
+  color: white;
+  margin-left: 39vw;
+  font-size: 1vw;
+}
+
+.pieChart {
+  /* border: 1px solid white; */
+  margin-left: 5vw;
+  width: 25vw;
+  height: 30vw;
+  background-color: rgba(211, 211, 211, 0.795);
+}
+
+.homeBody2 {
+  border: 1px solid black;
+  color: white;
+  margin-left: 35vw;
+  margin-top: -20vw;
+  width: 20vw;
+  font-size: 2vw;
+  padding: 1vw 1vw 1vw 1vw;
+}
+
+.lineChart {
+  /* border: 1px solid white; */
+  margin-left: 62vw;
+  margin-top: -21vw;
+  width: 30vw;
+  height: 30vw;
+  background-color: rgba(211, 211, 211, 0.795);
+}
+
+.homeBody3 {
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-left: 30vw;
+}
+
+.problem1Body {
+  color: white;
+  font-size: 2vw;
+  margin-top: 3vw;
+  margin-left: 35vw;
+}
+
+.sourceDestination {
+  margin-top: 1vw;
+  float: left;
+}
+
+.sourceDestination tr {
+  padding-bottom: 4vw;
+}
+
+.source {
+  font-size: 2vw;
+}
+
+.destination {
+  font-size: 2vw;
+}
+
+.problem2Body {
+  color: white;
+  width: 30vw;
+  margin-left: 10vw;
+  margin-top: 10vw;
+}
+
+.barChart {
+  border: 1px solid white;
+  width: 35vw;
+  float: right;
+  margin-right: 20vw;
+  margin-top: -7vw;
+  height: 30vw;
+  background-color: rgba(211, 211, 211, 0.795);
+}
+
+.company_form {
+  margin-left: 40vw;
+  margin-top: 5vw;
+  width: 20vw;
+}
+
+.company_form .form_field {
+  width: 15vw;
+  height: 2vw;
+  font-size: 1vw;
+}
+
+.company_form input {
+  margin-bottom: 1vw;
+}
+
+.company_form button {
+  margin-left: 5vw;
+  margin-top: 2vw;
+  width: 5vw;
+  height: 2vw;
+  font-size: 1vw;
+}
+
+.lineChart1 {
+  margin-left: 50vw;
+  margin-top: -15vw;
+  width: 35vw;
+  height: 35vw;
+  background-color: rgba(211, 211, 211, 0.795);
+}
+
+.about {
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+
+.about1 {
+  color: white;
+  font-size: 1vw;
+  margin-left: 30vw;
+  margin-top: 5vw;
+  font-weight: bold;
+}
+
+.google_map {
+  border: 1px solid white;
+  float: right;
+  width: 45vw;
+  margin-right: 5vw;
+  margin-top: 3vw;
+  height: 35vw;
+}
+
+.google,
+.google:hover {
+  margin-left: 5vw;
+  margin-top: 4vw;
+  color: black;
+}
