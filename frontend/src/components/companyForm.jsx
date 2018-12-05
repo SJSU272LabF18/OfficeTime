@@ -1,9 +1,24 @@
 import React, { Component } from "react";
-import Navbar from "./common/navbar";
+import Navbar from "./common/navbar2";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
+import './companyForm.css';
 
 class CompanyForm extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      authFlag: false,
+      companyname : "",
+      department :"",
+      homeaddress : "",
+      companyaddress : "",
+      timing : ""
+    };
+    // this.signup = this.signup.bind(this);
+  }
+
   renderField(field) {
     const {
       meta: { touched, error }
@@ -46,9 +61,14 @@ class CompanyForm extends Component {
     return (
       <div className="home">
         <Navbar />
-        <div className="company_form">
+        <div class="headingtext">
+            Please fill out your details in the form below
+            </div>
+            <div className="block">
+        <div className="company_formm col-md-4">
           <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-            <Field
+            
+            {/* <Field
               name="firstname"
               component={this.renderField}
               label="First Name"
@@ -57,7 +77,7 @@ class CompanyForm extends Component {
               name="lastname"
               component={this.renderField}
               label="Last Name"
-            />
+            /> */}
             <Field
               name="companyname"
               component={this.renderField}
@@ -87,6 +107,7 @@ class CompanyForm extends Component {
               Submit
             </button>
           </form>
+          </div>
         </div>
       </div>
     );

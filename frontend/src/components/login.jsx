@@ -3,6 +3,10 @@ import Navbar from "./common/navbar";
 import { GoogleLogin } from "react-google-login";
 import axios from "axios";
 import './Login.css';
+import { Redirect } from "react-router";
+import { FacebookLoginButton } from "react-social-login-buttons";
+import { TwitterLoginButton } from "react-social-login-buttons";
+import { LinkedInLoginButton } from "react-social-login-buttons";
 
 class Login extends Component {
   constructor(props) {
@@ -26,17 +30,19 @@ class Login extends Component {
         provider_pic: res.w3.Paa
       };
     }
-    console.log(postData);
-
+    window.localStorage.setItem("email", postData.email);
+    console.log(postData.email);
+    console.log("postdata",postData)  
     axios.defaults.withCredentials = true;
-    axios
-      .post("http://localhost:3001/login", postData)
+    axios.post("http://localhost:3001/login", postData)
       .then(response => {
         console.log("Status Code : ", response.status);
+        window.localStorage.setItem("token", postData.token)
         if (response.status === 200) {
           this.setState({
             authFlag: true
           });
+          console.log(this.state.authFlag)
         } else {
           this.setState({
             authFlag: false
@@ -52,20 +58,34 @@ class Login extends Component {
     const responseGoogle = response => {
       this.signup(response, "google");
     };
+    let redirectVar = null;
+    if (this.state.authFlag) {
+      redirectVar = (
+        <Redirect
+          to={{
+            pathname: "/companyform"
+          }}
+        />
+      );
+    }
     return (
       <div className="home">
         <Navbar />
-        <div className="login_img">
+        {redirectVar}
+        <div className="login__img col-md-6">
           <img
             src={require("../images/traffic.jpg")}
             alt="Couldn't found anything"
             className="traffic_img"
           />
         </div>
-        <div className="login_body">
+        <div className="login_body col-md-6">
+          <div className="text__login">
           <h1>Login</h1>
+          </div>
           <br />
-          <div className="google">
+          <br />
+          <div className="googlee">
             <GoogleLogin
               clientId="405511051479-khfrjurgb9v41p0g77ic97q6qttomvub.apps.googleusercontent.com"
               buttonText="Sign in with Google"
@@ -73,6 +93,21 @@ class Login extends Component {
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
             />
+          </div>
+          <div className="twitter">
+          <TwitterLoginButton>
+          <span className="twittertext">Sign In with Twitter</span>
+          </TwitterLoginButton>
+          </div>
+          <div className="faceboook">
+           <FacebookLoginButton>
+            <span className="facebooktext">Facebook Sign In</span>
+          </FacebookLoginButton>
+          </div>
+          <div className="linkedin">
+          <LinkedInLoginButton>
+          <span className="linkedintext">LinkedIn Sign In</span>
+          </LinkedInLoginButton>>
           </div>
         </div>
       </div>

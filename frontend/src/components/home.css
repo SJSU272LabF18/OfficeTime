@@ -1,0 +1,63 @@
+.piechart1{
+    margin-bottom: 0px;
+    color: #fff;
+    background-color: #fff;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+.text-data{
+    color: #fff;
+    margin-top: 30px;
+    font-family: serif;
+}
+.trafficdata{
+    text-align: center;
+}
+.wetell{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bethe{
+    text-align: center;
+    margin-top: 10px;
+}
+.homeBodyy2{
+    text-align: center;
+    font-family: serif;
+    font-size: 22px;
+    max-width: 300px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding: 15px 15px 15px 15px;
+    border: solid black;
+}
+.linechart2{
+    margin-top: 30px;
+    background-color: #fff;
+    opacity: 0.7;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+.mainbar{
+    margin-bottom: 20px;
+}
+.homeBodyy{
+    text-align: center;
+    font-family: serif;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: bold;
+}
+.buttoncontainer, .buttoncontainer:hover{
+    text-align: center;
+    margin-top: 25px;
+}
+.homeNextt, .homeNextt:hover{
+    border-radius: 10px;
+    background-color: black;
+    border-color: black;
+}
+.homeNexttext{
+    color: #fff;
+    font-size: 20px;
+}

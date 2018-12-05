@@ -2,16 +2,18 @@ import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Link } from "react-router-dom";
 import { VictoryBar, VictoryChart } from "victory";
+import './problemStatement2.css';
 
 class ProblemStatement2 extends Component {
   render() {
     return (
       <div className="home">
         <Navbar />
-        <div className="problem2Body">
+        <div className="problem col-md-5">
           <h1>This graph will show the commute time at different day hours.</h1>
         </div>
-        <div className="barChart">
+        <div className="col-md-2"></div>
+        <div className="barChartt col-md-5">
           <VictoryChart domainPadding={40}>
             <VictoryBar
               style={{ data: { fill: "blue" } }}
@@ -26,9 +28,9 @@ class ProblemStatement2 extends Component {
             />
           </VictoryChart>
         </div>
-        <button className="homeNext">
+        <button className="homeNe">
           <Link
-            className="homeNext_text"
+            className="homeN"
             to={{
               pathname: "/login"
             }}
