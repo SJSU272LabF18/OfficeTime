@@ -133,9 +133,9 @@
 
 .lineChart {
   /* border: 1px solid white; */
-  margin-left: 62vw;
+  /* margin-left: 62vw; */
   margin-top: -21vw;
-  width: 30vw;
+  width: 35vw;
   height: 30vw;
   background-color: rgba(211, 211, 211, 0.795);
 }
