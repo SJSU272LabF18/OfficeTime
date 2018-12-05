@@ -1,0 +1,177 @@
+.martha{
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px 44px 10px 44px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.martha:hover{
+    background-color: blueviolet;
+    font-size: 18px;
+    border-color: blueviolet;
+    color: beige;
+    transform: scale(1.15);
+    font-family: serif;
+}
+.san{
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.san:hover{
+    font-size: 22px;
+    background-color: rgba(226, 43, 43, 0.849);
+    border-color: rgba(226, 43, 43, 0.849);
+    color: beige;
+    transform: scale(1.15);
+    font-family: serif;
+}
+.s33rd{
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px 44px 10px 44px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.s33rd:hover{
+    font-size: 22px;
+    background-color: rgba(226, 168, 43, 0.89);
+    border-color: rgba(226, 168, 43, 0.89);
+    color: beige;
+    transform: scale(1.15);
+    font-family: serif;
+}
+.santa{
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 27px 10px 27px;
+}
+.santa:hover{
+    font-size: 22px;
+    background-color: rgba(198, 226, 43, 0.925);
+    font-family: serif;
+    border-color: rgba(198, 226, 43, 0.925);
+    color: beige;
+    transform: scale(1.15);
+}
+.facebook{
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 34px 10px 34px;
+}
+.facebook:hover{
+    font-size: 22px;
+    background-color: rgba(64, 226, 43, 0.89);
+    font-family: serif;
+    border-color: rgba(64, 226, 43, 0.89)t;
+    color: beige;
+    transform: scale(1.15);
+}
+.google{
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 8px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px 43px 10px 43px;
+}
+.google:hover{
+    font-size: 22px;
+    font-family: serif;
+    background-color: rgba(46, 133, 214, 0.918);
+    border-color: rgba(46, 133, 214, 0.918);
+    color:  rgb(252, 249, 249);
+    transform: scale(1.15);
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.ibm{
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px 77px 10px 77px;
+}
+.ibm:hover{
+    font-size: 22px;
+    font-family: serif;
+    background-color: rgb(196, 75, 190);
+    border-color: rgb(196, 75, 190);
+    color: beige;
+    transform: scale(1.15);
+}
+.chase{
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: transform .2s ease-in-out;
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px 51px 10px 51px;
+}
+.chase:hover{
+    font-size: 22px;
+    background-color: rgb(43, 226, 217);
+    font-family: serif;
+    border-color: rgb(43, 226, 217);
+    color: beige;
+    transform: scale(1.15);
+}
+.sub-componentt{
+    font-family: serif;
+    margin-top: 20px;
+}
+.homeNex{
+    font-family: serif;
+    font-size: 18px;
+    border-radius: 14px;
+    background-color: black;
+    border-color: black;
+    color: rgb(250, 251, 252);
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 75%;
+}
+.problem1Body{
+    font-family: serif;
+    font-size: 35px;
+}
+.clicktosee{
+    font-family: serif;
+    color: white;
+    float: center;
+}
+.sourcebutton{
+    font-family: serif;
+    block-size: 10px;
+}
+.sourcetext{
+    color: #fff;
+    font-family: serif;
+    margin-left: 40px;
+}
+.inputbox{
+  height: 28px;
+  width: 65%; 
+}
