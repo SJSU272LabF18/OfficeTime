@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./common/navbar";
 import { Link } from "react-router-dom";
-import { VictoryPie, VictoryChart, VictoryLine } from "victory";
+import {VictoryBar, VictoryChart, VictoryLine } from "victory";
 
 class Solution extends Component {
   state = {};
@@ -10,17 +10,42 @@ class Solution extends Component {
       <div className="home">
         <Navbar />
         <div className = "mainbar col-md-12">
-        <div className = "piechart piechart1 col-md-4">
+        <div className = "linechart linechart2 col-md-4">
+        <div className="chart_heading">Money that are been saved, considering our recommendations</div>
         {" "}
-          <VictoryPie
+        <VictoryChart
+          domainPadding={{ x: 40 }}>
+          <VictoryBar
+            barRatio={0.8}
+            style={{
+              data: { fill: "#c43a31" }
+            }}
+            categories={{
+              y: ["$"+"10b","$"+"20b","$"+"30b","$"+"40b","$"+"50b","$"+"60b"]
+            }}
+            cornerRadius={15}
+            animate={{
+              duration: 2000,
+              onLoad: { duration: 1000 }
+            }}
+            labels={(d) => d.y + "0b"}
+            data={[
+              { x: "Los Angeles", y: 2 },
+              { x: "New York City", y: 5 },
+              { x: "San Francisco", y: 3 },
+              { x: "Miami", y: 1}, 
+            ]}
+          />
+        </VictoryChart>
+          {/* <VictoryPie
             colorScale={["#008f68", "#6DB65B", "#4AAE9B", "#EFBB35"]}
             data={[
               { x: "A", y: 1234 },
               { x: "B", y: 2048 },
               { x: "C", y: 2600 },
               { x: "D", y: 9000 } 
-            ]}
-          />
+            ]} */}
+          
         </div>
         <div className = "text-data col-md-4">
           <div className="heading-text">
@@ -31,7 +56,7 @@ class Solution extends Component {
             <h4 className="bethe">BE THE SPEED YOU WISH TO SEE IN THE WORLD</h4>
             </div>
             <div className="homeBodyy2">
-            Time Companies are saving using our recommendations
+            Money and Time are saved using our recommendations
             </div>
         </div>
          <div className="linechart linechart2  col-md-4">
@@ -124,5 +149,4 @@ class Solution extends Component {
     );
   }
 }
-
-export default Solution;
+export default Solution
