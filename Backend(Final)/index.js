@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var jsgraphs = require('js-graph-algorithms');
 var arr = require('./array.js');
+var mongoose=require("./db");
 
 var weight = arr.weight;
 var site = arr.site;
@@ -21,7 +22,53 @@ var traffic19 = arr.traffic19;
 var traffic20 = arr.traffic20;
 var traffic21 = arr.traffic21;
 var n = site.length
-var g7 = new jsgraphs.WeightedDiGraph(n);
+
+// var route=[]
+// var routeCost=[]
+// var routeTime=[]
+
+
+
+// var g1 = new jsgraphs.WeightedDiGraph(n);
+// var g2 = new jsgraphs.FlowNetwork(n);
+// var g3 = new jsgraphs.Graph(n);
+
+app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+const port = 3001;
+
+app.use(bodyParser.json())
+
+app.post('/login', function(req,res){
+   console.log(req.body)
+   var users = new mongoose.Users({
+   name : req.body.name,
+   token : req.body.token,
+   email : req.body.email,
+   provider : req.body.provider,
+   provider_Id : req.body.provider_Id
+   });
+   console.log("in post request", users)
+   users.save().then(
+      user => {
+        console.log("user created :", user);
+        res.status(200).send("User created");
+      },err => {
+         console.log("User Already exists.");
+        status = 400;
+        res.status(400).send("User exists");
+       }
+     );
+})
+
+app.post('/query', function(req,res){
+  console.log(req.body) 
+    
+   
+   var s = req.body.source; //source
+   var d = req.body.destination;
+  // var s = 14; //source
+  // var d = 1;
+  var g7 = new jsgraphs.WeightedDiGraph(n);
 var g8 = new jsgraphs.WeightedDiGraph(n);
 var g9 = new jsgraphs.WeightedDiGraph(n);
 var g10 = new jsgraphs.WeightedDiGraph(n);
@@ -46,51 +93,11 @@ var route18=[]
 var route19=[]
 var route20=[]
 var route21=[]
-var route=[]
-var routeCost=[]
-var routeTime=[]
 
-
-
-// var g1 = new jsgraphs.WeightedDiGraph(n);
-// var g2 = new jsgraphs.FlowNetwork(n);
-// var g3 = new jsgraphs.Graph(n);
-
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
-const port = 3001;
-
-app.use(bodyParser.json())
-
-app.post('/login', function(req,res){
-
-    console.log(req.body)
-    var users = new mongoose.Users({
-    name : req.body.name,
-    token : req.body.token,
-    email : req.body.email,
-    provider : req.body.provider,
-    provider_Id : req.body.provider_Id
-    });
-    console.log("in post request", users)
-    users.save().then(
-       user => {
-         console.log("user created :", user);
-         res.code = 200;
-       },err => {
-          console.log("User Already exists.");
-         res.code = 400;
-        }
-      );
-})
-
-app.post('/query', function(req,res){
-  console.log(req.body) 
-  
-   var s = req.body.source; //source
-   var d = req.body.destination;
-  // var s = 14; //source
-  // var d = 1;
   var route=[]
+  var routeCost=[]
+  var routeTime=[]
+  console.log("test",route,routeCost)
 //-------------------add edges to dijkstras------------------------
 for(var i=0;i<n;i++){
   if( site[i]!=0 && connected_to[i]!=0 && traffic7[i]!=0){
@@ -443,9 +450,7 @@ res.writeHead(200, {
     
     console.log("final",JSON.stringify(route));
     res.end(JSON.stringify({time:routeTime,route:route,cost:routeCost}));
-    route=[]
-    routeCost=[]
-    routeTime=[]
+   
 })
 
 app.listen(port);

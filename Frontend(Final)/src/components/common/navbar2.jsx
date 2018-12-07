@@ -39,7 +39,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light ">
         <a className="navbar-home" href="/home">
-          Traffic Assistant
+          OfficeTime
         </a>
 
         <a className = "Logoutbutton" href="#" onClick={this.handlelogout}>Logout</a>

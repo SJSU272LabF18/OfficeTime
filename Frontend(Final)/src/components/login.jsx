@@ -107,7 +107,7 @@ class Login extends Component {
           <div className="linkedin">
           <LinkedInLoginButton>
           <span className="linkedintext">LinkedIn Sign In</span>
-          </LinkedInLoginButton>>
+          </LinkedInLoginButton>
           </div>
         </div>
       </div>

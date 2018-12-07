@@ -53,10 +53,17 @@ class CompanyForm extends Component {
   }
 
   onSubmit(values) {
-    this.props.history.push("/suggestions");
+    
+    this.setState({companyname:values.companyname,redirectFlag:true});
+ 
   }
 
   render() {
+    if(this.state.redirectFlag){
+      this.props.history.push("/suggestions");
+    }
+   console.log(this.state.companyname);
+   localStorage.setItem("companyname",this.state.companyname);
     const { handleSubmit } = this.props;
     return (
       <div className="home">
@@ -65,7 +72,7 @@ class CompanyForm extends Component {
             Please fill out your details in the form below
             </div>
             <div className="block">
-        <div className="company_formm col-md-4">
+        <div className="company_formm col-md-4" style={{borderRadius:"15px"}}>
           <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
             
             {/* <Field
