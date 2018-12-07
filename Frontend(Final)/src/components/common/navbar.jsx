@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light ">
         <a className="navbar-home" href="/home">
-         Office Time
+         OfficeTime
         </a>
 
         <Link to="/login" className="login">

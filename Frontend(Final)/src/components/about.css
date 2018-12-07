@@ -1,0 +1,28 @@
+.aboutt1{
+    color: #fff;
+    font-family: serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 60px;
+}
+.about_us{
+    border: 4px solid black;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    background-color: #fff;
+    color:black;
+    font-family: serif;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 35%;
+}
+.heading-textt{
+    text-align: center;
+    color: #fff;
+    font-family: serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 60px;
+}

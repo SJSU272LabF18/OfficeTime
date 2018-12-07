@@ -53,7 +53,7 @@ categories={{ y: ["$" + "6.3" + "b", "$"+"10.6"+ "b", "$"+"19.2"+ "b","$"+"33.7"
           <Link
             className="homeNext_text" style={{textDecorationLine:"none"}}
             to={{
-              pathname: "/solution"
+              pathname: "/problem1"
             }}
           >
           <div className="homeNexttext">
